@@ -1,13 +1,32 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import { useState } from "react";
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">About</Link>
-    </p>
-  </Layout>
-)
+import Link from "next/link";
+import Layout from "../components/Layout";
 
-export default IndexPage
+const IndexPage = () => {
+  const [greeting, setGreeting] = useState("こんにちは");
+  const handleClick = () => {
+    if (greeting === "こんにちは") {
+      setGreeting("こんばんは");
+    } else if (greeting === "こんばんは") {
+      setGreeting("おはよう");
+    } else {
+      setGreeting("こんにちは");
+    }
+  };
+
+  return (
+    <Layout title="Home | Next.js + TypeScript Example">
+      <h1>Hello World and Next.js 👋</h1>
+      <button onClick={handleClick}>8時間後</button>
+
+      <p>{greeting}</p>
+
+      <p>
+        <Link href="/about">About</Link>
+      </p>
+    </Layout>
+  );
+};
+
+export default IndexPage;
