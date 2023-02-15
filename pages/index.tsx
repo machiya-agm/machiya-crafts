@@ -21,6 +21,7 @@ const IndexPage = () => {
       <button
         onClick={handleClick}
         style={{
+          //青緑色
           backgroundColor: "#319795",
           border: "none",
           borderRadius: "4px",
