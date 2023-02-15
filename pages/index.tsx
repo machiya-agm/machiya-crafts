@@ -1,13 +1,19 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import type { NextPage } from "next";
+import { Container, Button } from "@mui/material";
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">About</Link>
-    </p>
-  </Layout>
-)
+import Link from "next/link";
+import Layout from "../components/Layout";
 
-export default IndexPage
+const IndexPage: NextPage = () => (
+  <Container>
+    <Layout title="Home | Next.js + TypeScript Example">
+      <h1>Hello Next.js 👋</h1>
+      <Button variant="contained">hello world</Button>
+      <p>
+        <Link href="/about">About</Link>
+      </p>
+    </Layout>
+  </Container>
+);
+
+export default IndexPage;
