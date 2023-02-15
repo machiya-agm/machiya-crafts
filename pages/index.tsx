@@ -18,7 +18,18 @@ const IndexPage = () => {
   return (
     <Layout title="Home | Next.js + TypeScript Example">
       <h1>Hello World and Next.js 👋</h1>
-      <button onClick={handleClick}>8時間後</button>
+      <button
+        onClick={handleClick}
+        style={{
+          backgroundColor: "#319795",
+          border: "none",
+          borderRadius: "4px",
+          color: "white",
+          padding: "4px 8px",
+        }}
+      >
+        8時間後
+      </button>
 
       <p>{greeting}</p>
 
