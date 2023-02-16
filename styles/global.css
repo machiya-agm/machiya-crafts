@@ -1,0 +1,19 @@
+a:visited {
+  /* color: inherit; */
+  color: #3399ff;
+  text-decoration-line: underline;
+  text-decoration-thickness: initial;
+  text-decoration-style: initial;
+  text-decoration-color: rgba(51, 153, 255, 0.4);
+}
+
+a:link,
+a:active,
+a:hover {
+  /* color: inherit; */
+  color: #99ccff;
+  text-decoration-line: underline;
+  text-decoration-thickness: initial;
+  text-decoration-style: initial;
+  text-decoration-color: rgba(51, 153, 255, 0.4);
+}
